@@ -17,7 +17,7 @@ int main(void)
 		if (i != '9')
 		{
 			putchar(',');
-			putchar('');
+			putchar('\0');
 		}
 	}
 	putchar('\n');
