@@ -1,12 +1,13 @@
 #include <stdio.h>
-
+#include <main.h>
 /**
- * main - This program prints _putchar with a new line to the standard output
+ * _putchar - This program prints _putchar with a new line to the
+ * standard output
  *
  * Return: 0 (success);
  */
 
-int main(void)
+int _putchar(void)
 {
 	printf("_putchar\n");
 	return (0);
