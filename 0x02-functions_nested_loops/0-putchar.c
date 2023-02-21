@@ -1,14 +1,21 @@
-#include <stdio.h>
-#include <main.h>
+#include "main.h"
 /**
- * _putchar - This program prints _putchar with a new line to the
- * standard output
+ * main - This prints the alp of putchar
  *
  * Return: 0 (success);
  */
 
-int _putchar(void)
+
+int main(void)
 {
-	printf("_putchar\n");
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
