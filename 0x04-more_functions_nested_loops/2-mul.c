@@ -1,18 +1,15 @@
 #include "main.h"
-
 /**
- * mul - This function prints the multiple of two variables
- *
- * @a: Prototype function
- * @b: prototype function
- *
- * Return: The multiple of two variables
+ * mul -  checks for checks for a digit (0 through 9).
+ * @a: a -  Variable
+ * @b: b - variable
+ * Return: Always 0.
  */
 int mul(int a, int b)
-}
+{
 	int mul;
 
 	mul = a * b;
 
-	return(mul);
+	return (mul);
 }
