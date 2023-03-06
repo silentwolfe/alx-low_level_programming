@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
  * _memcpy - This function copies the memory area,
  * with this both variables should have the same data
