@@ -17,15 +17,12 @@ int factorial(int n)
 	else
 	{
 		int result = 1;
-		for (int i = 1; i <= n; i++)
+		int i;
+
+		for (i = 1; i <= n; i++)
 		{
-			result (*= i);
+			result *= i;
 		}
 	return (result);
-    }
+	}
 }
-
-
-
-
-
