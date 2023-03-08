@@ -1,3 +1,6 @@
+#include "main.h"
+#include <stdio.h>
+
 int helper(int n, int i);
 
 /**
