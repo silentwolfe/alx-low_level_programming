@@ -1,24 +1,33 @@
-#include "main.h"
+int helper(int n, int i);
+
 /**
- * _sqrt_recursion - Entry point
- * @n: local variable
- * Return: 0 (success);
+ * _sqrt_recursion - returns the natural square root of a number
+ * @n: the number to find the square root of
+ *
+ * Return: the square root of n or -1
+ * if n does not have a natural square root
  */
-
-int sqrt_helper(int n, int start, int end);
-
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
-	{
 		return (-1);
-	}
-	else if (n == 0 || n == 1)
-	{
-		return (n);
-	}
-	else
-	{
-		return (sqrt_helper(n, 1, n));
-	}
+	return (helper(n, 1));
+}
+
+/**
+ * helper - recursive helper function
+ * to find the natural square root of a number
+ * @n: the number to find the square root of
+ * @i: the current number being squared
+ *
+ * Return: the square root of n or -1
+ * if n does not have a natural square root
+ */
+int helper(int n, int i)
+{
+	if (i * i > n)
+		return (-1);
+	if (i * i == n)
+		return (i);
+	return (helper(n, i + 1));
 }
