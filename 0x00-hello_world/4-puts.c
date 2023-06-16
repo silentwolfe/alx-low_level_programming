@@ -1,9 +1,9 @@
 #include <stdio.h>
-/*
+/**
  * main - Prints a text file using puts
- * return - Returns 0(successful)
+ * Return: Returns 0(successful)
  */
-int main()
+int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
