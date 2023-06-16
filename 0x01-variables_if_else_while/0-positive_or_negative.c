@@ -5,6 +5,8 @@
  * main - Program will assign a random number to the variable
  * each time its been executed and its prints out if the number
  * is either negative or positive
+ *
+ * Return: Returns 0 is success else wrong
  */
 int main(void)
 {
