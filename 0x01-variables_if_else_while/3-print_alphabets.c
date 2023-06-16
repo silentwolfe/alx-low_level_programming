@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - This program prints the alphabet in lowercase,
+ * and then in uppercase, followed by a new line.
+ *
+ * Return: if 0 (success) else failure
+ */
+
+int main(void)
+{
+	char i;
+	char j;
+
+	for (i = 'a'; i <= 'z'; i++)
+		putchar(i);
+	for (j = 'A'; j <= 'Z'; j++)
+		putchar(j);
+	putchar('\n');
+	return (0);
+}
