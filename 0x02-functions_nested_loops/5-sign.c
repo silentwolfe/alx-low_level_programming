@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower - This function prints the sign of a number
+ * print_sign - This function prints the sign of a number
  * @n: integer prototype
  * Return: Return integers
  */
