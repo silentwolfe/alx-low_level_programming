@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - This program resets an integers value to 98
- * *n: prototype declaration in the parameter
+ * n: prototype declaration in the parameter
  *
  * Return: void
  */
