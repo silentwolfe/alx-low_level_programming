@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * puts2 - This function prints every other character of
@@ -9,15 +10,16 @@
 
 void puts2(char *str)
 {
-	if (str == NULL)
-		return (0);
-
 	int i = 0;
 
 	while (str[i] != '\0')
 	{
-		_putchar(str[i]);
-		i += 2;
+		if (i % 2 == 0)
+		{
+			_putchar(str[i]);
+		}
+		i++;
 	}
 	_putchar('\n');
 }
+
