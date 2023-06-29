@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strcat - This function concatenates a string
  * @dest: This is a pointer to the destination array which
@@ -11,17 +10,21 @@
  * the pointer to the destination string.
  */
 
-char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, const char *src)
 {
-	int i, j;
+	char *original_dest = dest;
 
-	for (i = 0; dest[i] != '\0'; i++);
-	for (j = 0; src[j] != '\0'; j++)
+	while (*dest)
+		dest++;
+
+	while (*src)
 	{
-		dest[i+j] = src[j];
+		*dest = *src;
+		dest++;
+		src++;
 	}
 
-	dest[i+j] = '\0';
+	*dest = '\0';
 
-	return (dest);
+	return (original_dest);
 }
