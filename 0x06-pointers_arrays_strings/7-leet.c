@@ -9,7 +9,6 @@
 
 char *leet(char *str)
 {
-	char *ptr = str;
 	char *leetChars = "AEOTL";
 	char *leetReplacements = "43071";
 	int i, j;
