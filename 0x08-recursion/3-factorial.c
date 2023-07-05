@@ -2,7 +2,7 @@
 
 /**
  * factorial - This function returns the length of a string
- * @s: The string to be passed in
+ * @n: The string to be passed in
  * Return: The factorial of anynumber
  */
 
