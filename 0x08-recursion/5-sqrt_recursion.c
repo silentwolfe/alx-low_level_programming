@@ -18,7 +18,9 @@ int _sqrt_recursion(int n)
 		return (0);
 	}
 
-	int mid = n / 2;
+	int mid;
+
+	mid = n / 2;
 
 	if (mid * mid == n)
 	{
