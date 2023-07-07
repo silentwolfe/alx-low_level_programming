@@ -1,29 +1,24 @@
 #include "main.h"
 
 /**
- * is_prime_number_recursive - This function prints out prime numbers
- * @n: number to be placed in
- * Return: The function returns 1 if the input integer is a
- * prime number, and 0 otherwise.
+ * is_prime_number - This program checks for prime numbers
+ * @n: user input
+ * Return: This function that returns 1 if the input integer
+ * is a prime number, otherwise return 0.
  */
-
-int is_prime_number_recursive(int n)
+int is_prime_number(int n)
 {
+	int i;
+
 	if (n <= 1)
 	{
 		return (0);
 	}
-
-	if (n == 2)
+	for (i = 2; i < n; i++)
 	{
+		if (n % i == 0)
+		{
+			return (0);
+		}
 		return (1);
 	}
-
-	if (n % 2 == 0)
-	{
-		return (0);
-	}
-
-	return (is_prime_number_recursive(n - 1));
-}
-
