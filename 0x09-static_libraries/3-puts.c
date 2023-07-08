@@ -8,5 +8,14 @@
 
 void _puts(char *s)
 {
-	return;
+	if (*s == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
+	else
+	{
+		_putchar(*s);
+		_puts(s + 1);
+	}
 }
