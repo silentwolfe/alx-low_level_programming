@@ -1,13 +1,11 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
-/**
- * _memset - This is an empty function
- * @s: prototype parameter
- * @b:  prototype parameter
- * @n:  prototype parameter
- * Return: 0 (success)
- */
 char *_memset(char *s, char b, unsigned int n)
 {
-	return (0);
+    return memset(s, b, n);
 }
+

@@ -1,12 +1,11 @@
 #include "main.h"
-
-/**
- * _abs - This is an empty function
- * @n: parameter
- * Return: (0) success
- */
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
 int _abs(int n)
 {
-	return (0);
+    return abs(n);
 }
+

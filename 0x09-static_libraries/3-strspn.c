@@ -1,13 +1,11 @@
 #include "main.h"
-
-/**
- * _strspn - This is an empty function
- * @s: parameter
- * @accept: parameter
- * Return: (0) success
- */
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
 unsigned int _strspn(char *s, char *accept)
 {
-	return (0);
+    return strspn(s, accept);
 }
+

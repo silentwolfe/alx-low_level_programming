@@ -1,13 +1,10 @@
 #include "main.h"
-
-/**
- * _strcpy - This is an empty function
- * @dest: destination parameter
- * @src: source paramter
- * Return: (0) success
- */
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 char *_strcpy(char *dest, char *src)
 {
-	return (0);
+    return strcpy(dest, src);
 }
+

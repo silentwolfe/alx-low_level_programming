@@ -1,13 +1,11 @@
 #include "main.h"
-
-/**
- * _strpbrk - This is an empty function
- * @s: parameter
- * @accept: parameter
- * Return: (0) success
- */
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
 char *_strpbrk(char *s, char *accept)
 {
-	return (0);
+    return strpbrk(s, accept);
 }
+

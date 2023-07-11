@@ -1,12 +1,11 @@
 #include "main.h"
-
-/**
- * _strlen - Tis is an empty function
- * @s: prototype paramter
- * Return: 0 (success);
- */
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
 int _strlen(char *s)
 {
-	return (0);
+    return strlen(s);
 }
+

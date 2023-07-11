@@ -1,12 +1,11 @@
 #include "main.h"
-
-/**
- * _islower - This is an empty function
- * @c: prototype parameter
- * Return: 90) success
- */
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
 int _islower(int c)
 {
-	return (0);
+    return (c >= 'a' && c <= 'z');
 }
+

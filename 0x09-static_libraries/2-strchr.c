@@ -1,13 +1,11 @@
 #include "main.h"
-
-/**
- * _strchr - This is an empty function
- * @s: prototype parameter
- * @s: prototype paramter
- * Return: 0 (success)
- */
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
 char *_strchr(char *s, char c)
 {
-	return (0);
+    return strchr(s, c);
 }
+

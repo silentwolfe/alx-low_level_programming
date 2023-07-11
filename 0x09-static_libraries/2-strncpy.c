@@ -1,15 +1,11 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
-/**
- * _strncpy - This is an empty function
- * @dest: destination
- * @src: source
- * @n: number of bytes
- * Return: (0) success
- */
-
-
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
-	return (0);
+    return strncpy(dest, src, n);
 }
+

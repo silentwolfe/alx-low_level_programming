@@ -1,14 +1,11 @@
 #include "main.h"
-
-/**
- * _strncat - This is an empty function
- * @dest: destination
- * @src: source
- * @n: numbers of bytes
- * Return: 0 (success)
- */
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
 char *_strncat(char *dest, char *src, int n)
 {
-	return (0);
+    return strncat(dest, src, n);
 }
+

@@ -1,12 +1,11 @@
 #include "main.h"
-
-/**
- * _isalpha - This is an empty function
- * @c: paramter
- * Return: (0) succes
- */
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
 int _isalpha(int c)
 {
-	return (0);
+    return isalpha(c);
 }
+

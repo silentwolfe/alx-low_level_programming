@@ -1,11 +1,11 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
-/**
- * _isdigit - This is an empty function
- * @c: prototype parameter
- * Return: 0 (success)
- */
 int _isdigit(int c)
 {
-	return (0);
+    return isdigit(c);
 }
+
