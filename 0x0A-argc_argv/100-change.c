@@ -9,7 +9,6 @@
  * @argv: argument vector
  * Return: (0) success else failure
  */
-
 int main(int argc, char *argv[])
 {
 	int cents;
@@ -20,7 +19,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-
 	cents = atoi(argv[1]);
 
 	if (cents < 0)
@@ -34,7 +32,6 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-
 	coin = 0;
 
 	coin += cents / 25;
@@ -52,6 +49,5 @@ int main(int argc, char *argv[])
 	coin += cents;
 
 	printf("%d\n", coin);
-
 	return (0);
 }
