@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - This function adds integers.
@@ -25,7 +26,7 @@ int main(int argc, char *argv[])
 		int j;
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[i][j] < '0' && argv[i][j] > '9')
+			if (!isdigit(argv[i][j]))
 			{
 				printf("Error\n");
 				return (1);
