@@ -31,8 +31,8 @@ int main(int argc, char *argv[])
 
 	if (cents == 0)
 	{
-		printf("Error\n");
-		return (1);
+		printf("0\n");
+		return (0);
 	}
 
 	coin = 0;
