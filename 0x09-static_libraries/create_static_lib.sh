@@ -1,3 +1,5 @@
 #!/bin/bash
-gcc -c *.c
-ar -rcs liball.a *.c
+for file in *.c; do
+	gcc -c $file
+done
+ar -rcs liball.a *.o
