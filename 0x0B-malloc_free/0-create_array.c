@@ -6,6 +6,7 @@
  * and initializes it with a specific char.
  * @size: The size of byte
  * @c: prototype
+ * Return: return the pointer array
  */
 
 char *create_array(unsigned int size, char c)
