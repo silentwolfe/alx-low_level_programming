@@ -22,7 +22,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 
 	ptr = malloc(nmemb * size);
-	
+
 	if (ptr != NULL)
 	{
 		memset(ptr, 0, nmemb * size);
