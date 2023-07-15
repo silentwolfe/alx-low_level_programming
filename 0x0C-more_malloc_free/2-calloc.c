@@ -14,15 +14,22 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *arr = NULL;
-
-	arr = calloc(nmemb, sizeof(size));
-
-	if (arr == NULL)
+	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
 
-	free(arr);
-	return (arr);
+	void *ptr = malloc(nmemb * size);
+	
+	if (ptr != NULL)
+	{
+		memset(ptr, 0, nmemb * size);
+	}
+
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
+
+	return (ptr);
 }
