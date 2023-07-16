@@ -8,7 +8,7 @@
  * @new_size: This is the size that is to be allocated for the new block
  * Return: The function returns a pointer to the newly allocated memory block
  */
-void *_realloc(void *ptr, unsigned int old_size, unsigned new_size)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	void *new_ptr;
 
@@ -25,7 +25,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned new_size)
 	{
 		return (ptr);
 	}
-	
+
 	new_ptr = malloc(new_size);
 
 	if (new_size > old_size)
