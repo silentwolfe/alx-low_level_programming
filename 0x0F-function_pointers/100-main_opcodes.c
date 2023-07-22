@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int bytes;
+	int bytes, i;
 
 	if (argc != 2)
 	{
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 		return (2);
 	}
 
-	for (int i = 0; i < bytes; i++)
+	for (i = 0; i < bytes; i++)
 	{
 		printf("%02hhx ", *((unsigned char *)main + i));
 	}
