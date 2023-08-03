@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -11,6 +11,8 @@
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
+	listint_t *current;
+
 	listint_t *newNode = malloc(sizeof(listint_t));
 
 	if (newNode == NULL)
@@ -27,9 +29,9 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		return (newNode);
 	}
 
-	listint_t *current = *head;
+	current = *head;
 
-	while (current != NULL)
+	while (current->next != NULL)
 	{
 		current = current->next;
 	}
