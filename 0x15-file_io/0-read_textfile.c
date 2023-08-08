@@ -9,7 +9,7 @@
 /**
  * read_textfile - This function reads the contents of a textfile
  * @filename: The file to be read
- * @letter: The amount of characters stored
+ * @letters: The amount of characters stored
  * Return: Return the actual numbers of letters printed
  */
 
@@ -24,7 +24,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	
+
 	file_des = open(filename, O_RDONLY);
 
 	if (file_des == -1)
@@ -41,7 +41,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	print_len = ((ssize_t)letters < (ssize_t)read_text) ? (ssize_t)letters : read_text;
+	print_len = ((ssize_t)letters < read_text) ? (ssize_t)letters : read_text;
 	write(STDOUT_FILENO, buffer, print_len);
 
 	close(file_des);
