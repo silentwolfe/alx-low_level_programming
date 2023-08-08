@@ -45,6 +45,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	write(STDOUT_FILENO, buffer, print_len);
 
 	close(file_des);
+
+	if (write_result == -1 || write_result != print_len)
+   	{
+		return (0);
+	}
+
 	return (print_len);
 }
-
