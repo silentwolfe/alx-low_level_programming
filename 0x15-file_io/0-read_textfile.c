@@ -4,7 +4,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-#define BUFFSIZE 1024
+#define BUFFSIZE 2500
 
 /**
  * read_textfile - This function reads the contents of a textfile
@@ -48,7 +48,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	close(file_des);
 
 	if (write_result == -1 || write_result != print_len)
-   	{
+	{
 		return (0);
 	}
 
