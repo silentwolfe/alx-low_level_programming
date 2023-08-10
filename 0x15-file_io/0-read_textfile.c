@@ -19,6 +19,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t read_text;
 	char buffer[BUFFSIZE];
 	ssize_t print_len;
+	ssize_t write_result;
 
 	if (filename == NULL)
 	{
@@ -42,7 +43,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	print_len = ((ssize_t)letters < read_text) ? (ssize_t)letters : read_text;
-	write(STDOUT_FILENO, buffer, print_len);
+	write_result = write(STDOUT_FILENO, buffer, print_len);
 
 	close(file_des);
 
