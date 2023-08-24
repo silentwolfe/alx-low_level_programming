@@ -12,6 +12,7 @@
 
 int main(void)
 {
+	int i, j;
 	const char charset[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
 	const int charsetLength = sizeof(charset) - 1;
@@ -20,11 +21,11 @@ int main(void)
 
 	printf("Generating random passwords for 101-crackme:\n");
 
-	for (int i = 0; i < 10; i++)
+	for (i = 0; i < 10; i++)
 	{
 		char password[PASSWORD_LENGTH + 1];
 
-		for (int j = 0; j < PASSWORD_LENGTH; j++)
+		for (j = 0; j < PASSWORD_LENGTH; j++)
 		{
 			password[j] = charset[rand() % charsetLength];
 		}
