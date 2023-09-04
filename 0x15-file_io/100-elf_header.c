@@ -13,8 +13,10 @@ void print_error(const char *msg)
 
 void print_elf_header_info(Elf64_Ehdr *header)
 {
+	int i;
+
 	printf("  Magic:   ");
-	for (int i = 0; i < EI_NIDENT; i++)
+	for (i = 0; i < EI_NIDENT; i++)
 	{
 		printf("%02x", header->e_ident[i]);
 		if (i < EI_NIDENT - 1) {
@@ -120,20 +122,22 @@ void print_elf_header_info(Elf64_Ehdr *header)
 
 int main(int argc, char *argv[])
 {
+	const char *file_name;
+	int fd;
+	Elf64_Ehdr header;
+
 	if (argc != 2)
 	{
 		print_error("Usage: elf_header elf_filename");
 	}
 
-	const char *file_name = argv[1];
-	int fd = open(file_name, O_RDONLY);
+	file_name = argv[1];
+	fd = open(file_name, O_RDONLY);
 
 	if (fd == -1)
 	{
 		print_error("Error: Can't open file");
 	}
-
-	Elf64_Ehdr header;
 
 	if (read(fd, &header, sizeof(Elf64_Ehdr)) != sizeof(Elf64_Ehdr))
 	{
