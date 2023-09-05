@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
 	int fd_from, fd_to;
 	ssize_t nread, nwritten;
 	char buffer[BUFFER_SIZE];
+	mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 
 	if (argc != 3)
 	{
@@ -29,11 +30,11 @@ int main(int argc, char *argv[])
 
 	if (fd_from == -1)
 	{
-		fprintf(stderr, "Error: Can't read from %s\n", file_from);
+		fprintf(stderr, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
 
-	fd_to = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	fd_to = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, mode);
 
 	if (fd_to == -1)
 	{
