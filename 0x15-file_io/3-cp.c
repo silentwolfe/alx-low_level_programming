@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		fprintf(stderr, "Usage: %s file_from file_to\n", argv[0]);
+		fprintf(stderr, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 
 	if (fd_from == -1)
 	{
-		fprintf(stderr, "Error: Can't read from file %s\n", file_from);
+		fprintf(stderr, "Error: Can't read from %s\n", file_from);
 		exit(98);
 	}
 
@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 
 	if (fd_to == -1)
 	{
-		fprintf(stderr, "Error: Can't write to file %s\n", file_to);
+		fprintf(stderr, "Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
 
@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 
 		if (nwritten == -1)
 		{
-			fprintf(stderr, "Error: Can't write to file %s\n", file_to);
+			fprintf(stderr, "Error: Can't write to  %s\n", file_to);
 			exit(99);
 		}
 		if (nwritten != nread)
@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
 
 	if (nread == -1)
 	{
-		fprintf(stderr, "Error: Can't read from file %s\n", file_from);
+		fprintf(stderr, "Error: Can't read from %s\n", file_from);
 		exit(98);
 	}
 
