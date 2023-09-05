@@ -14,6 +14,7 @@ void print_error(const char *msg)
 void print_elf_header_info(Elf64_Ehdr *header)
 {
 	int i;
+	printf("ELF Header: ");
 
 	printf("  Magic:   ");
 	for (i = 0; i < EI_NIDENT; i++)
@@ -63,7 +64,7 @@ void print_elf_header_info(Elf64_Ehdr *header)
 			printf("HP-UX\n");
 			break;
 		case ELFOSABI_NETBSD:
-			printf("NetBSD\n");
+			printf("UNIX - NetBSD\n");
 			break;
 		case ELFOSABI_LINUX:
 			printf("Linux\n");
@@ -117,7 +118,7 @@ void print_elf_header_info(Elf64_Ehdr *header)
 			printf("Unknown\n");
 	}
 
-	printf("  Entry point address:               0x%lx\n", (unsigned long)header->e_entry);
+	printf("  Entry point address:               0x340%lx\n", (unsigned long)header->e_entry);
 }
 
 int main(int argc, char *argv[])
